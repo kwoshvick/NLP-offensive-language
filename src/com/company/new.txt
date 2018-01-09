@@ -1,0 +1,6 @@
+NN 
+f00NN 
+f000NN 
+NN 
+JJ 
+f00NN 
