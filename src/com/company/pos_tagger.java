@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class pos_tagger {
 
-    public static MaxentTagger mt = new MaxentTagger("/home/kwoshvick/Documents/stanford-postagger-2017-06-09/models/english-left3words-distsim.tagger");
+    public static MaxentTagger mt = new MaxentTagger("/home/kwoshvick/stanford-postagger-2017-06-09/models/english-left3words-distsim.tagger");
 
     public static void writeToFile(String text, String writeFileName) {
         try {
@@ -45,10 +45,10 @@ public class pos_tagger {
 
 
     public static void main(String[] args) throws Exception {
-        String read_file_name = "/home/kwoshvick/IdeaProjects/NLP-offensive-language/src/com/company/sexist.txt";
-        String write_file_name = "/home/kwoshvick/IdeaProjects/NLP-offensive-language/src/com/company/pos_sexist.txt";
-        String read_file_name2 = "/home/kwoshvick/IdeaProjects/NLP-offensive-language/src/com/company/non-sexist.txt";
-        String write_file_name2 = "/home/kwoshvick/IdeaProjects/NLP-offensive-language/src/com/company/pos_non-sexist.txt";
+        String read_file_name = "/home/kwoshvick/IdeaProjects/NLP-offensive-language/dataset/offensive.txt";
+        String write_file_name = "/home/kwoshvick/IdeaProjects/NLP-offensive-language/dataset/pos_offensive.txt";
+        String read_file_name2 = "/home/kwoshvick/IdeaProjects/NLP-offensive-language/dataset/non-offensive.txt";
+        String write_file_name2 = "/home/kwoshvick/IdeaProjects/NLP-offensive-language/dataset/pos_non-offensive.txt";
         readFile(read_file_name,write_file_name);
         readFile(read_file_name2,write_file_name2);
 
