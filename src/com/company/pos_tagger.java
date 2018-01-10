@@ -45,9 +45,12 @@ public class pos_tagger {
 
 
     public static void main(String[] args) throws Exception {
-        String read_file_name = "/home/kwoshvick/IdeaProjects/NLP-offensive-language/src/com/company/t.txt";
-        String write_file_name = "/home/kwoshvick/IdeaProjects/NLP-offensive-language/src/com/company/new.txt";
+        String read_file_name = "/home/kwoshvick/IdeaProjects/NLP-offensive-language/src/com/company/sexist.txt";
+        String write_file_name = "/home/kwoshvick/IdeaProjects/NLP-offensive-language/src/com/company/pos_sexist.txt";
+        String read_file_name2 = "/home/kwoshvick/IdeaProjects/NLP-offensive-language/src/com/company/non-sexist.txt";
+        String write_file_name2 = "/home/kwoshvick/IdeaProjects/NLP-offensive-language/src/com/company/pos_non-sexist.txt";
         readFile(read_file_name,write_file_name);
-//        readFile();
+        readFile(read_file_name2,write_file_name2);
+
     }
 }
